@@ -1,0 +1,47 @@
+@use 'variables';
+
+.content {
+    background-color: #fff;
+    padding: 32px;
+    max-width: 100%;
+    width: 100%;
+    box-shadow: 0px 38px 40px 0px rgba(0,0,0,0.41);
+}
+
+.sections {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 824px) {
+        display: block;
+    }
+
+    &__cake {
+        max-width: 500px;
+        margin: auto auto;
+
+        @media (max-width: 1024px) {
+            max-width: 300px;
+        }
+
+        @media (max-width: 824px) {
+            max-width: 300px;
+            display: flex;
+            margin-top: 50px;
+        }
+        @media (max-width: 450px) {
+            max-width: 200px;
+            display: flex;
+            margin-top: 50px;
+        }
+    }
+}
+
+.section {
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+</head>
+<body>
+    <div class="container">
+        <main class="content">
+            <nav class="nav">
+                <h1 class="nav__logo">My Birthday</h1>
+                <div class="hamb-menu" id="hamb-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav__menu" id="nav">
+                    <li class="nav__menu__item" data-nav-button="home">Inicio</li>
+                    <li class="nav__menu__item" data-nav-button="details">Detalhes</li>
+                    <li class="nav__menu__item" id="confirming">Confirmar presença</li>
+                </ul>
+            </nav>
+            <section class="sections">
+                <div class="home_section section section--active" data-nav-tab="home">
+                    <div class="home_section__details">
+                        <h2 class="invite">
+                            Você foi convidado para o meu aniversário!
+                        </h2>
+                        <p class="remaining" id="remaining">
+                            A festa será em: 
+                            <span class="remaining__counter" id="counter">
+                                
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="details_section section" data-nav-tab="details">
+                    <ul class="details_section__items">
+                        <li class="details_section__items__item">
+                            <b>Localização</b>
+                            Allianz Parque - Barra Funda - São Paulo
+                        </li>
+                        <li class="details_section__items__item">
+                            <b>O que levar</b>
+                            Se não levar presente nem entra
+                        </li>
+                        <li class="details_section__items__item">
+                            <b>Quando</b>
+                            13/05/2024 às 19h
+                        </li>
+                    </ul>
+                </div>
+                <img src="images/cake.png" alt="Cake" class="sections__cake">
+            </section>
+        </main>
+    </div>
+        <div class="confirming" id="confirm-tab">
+            <div class="confirming__container">
+                <label for="name">Coloque seu nome</label>
+                <input type="text" id="name">
+                <div class="buttons">
+                    <button class="button button--cancel">Cancelar</button>
+                    <button type="submit" class="button button--submit">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

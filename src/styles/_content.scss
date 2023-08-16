@@ -12,6 +12,7 @@
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
 
     @media (max-width: 824px) {
         display: block;
@@ -20,6 +21,12 @@
     &__cake {
         max-width: 500px;
         margin: auto auto;
+        transition: all ease .5s;
+        scale: 0.9;
+
+        &:hover {
+            scale: 1;
+        }
 
         @media (max-width: 1024px) {
             max-width: 300px;

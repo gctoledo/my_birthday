@@ -5,7 +5,7 @@
     padding: 40px;
     border-radius: 5px;
     position: absolute;
-    background-image: linear-gradient( #7ddaf6, #5fa7bc);
+    background-image: linear-gradient( variables.$blue1, variables.$blue2);
     
     &__container {
         display: flex;
@@ -26,8 +26,5 @@
             color: variables.$textColor;
         }   
     
-        .buttons {
-    
-        }
     }
 }
